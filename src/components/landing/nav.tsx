@@ -1,4 +1,6 @@
 import { Menu, Webhook } from "lucide-react";
+import Link from "next/link";
+import { Button } from "../ui/button";
 
 export default function Navbar() {
   return (
@@ -7,7 +9,14 @@ export default function Navbar() {
         <Webhook className="text-[#9900FF]" />
         <h1 className="font-bold text-xl">Scapely</h1>
       </span>
-      <Menu />
+      <Link href="/multiscraper">
+        <Button
+          variant="default"
+          className="w-fit rounded-full py-1 inline-flex gap-2"
+        >
+          dashboard
+        </Button>
+      </Link>
     </header>
   );
 }

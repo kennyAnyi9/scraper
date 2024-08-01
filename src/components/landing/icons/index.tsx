@@ -12,7 +12,7 @@ export const ExternalLink = ({ classNameName }: any) => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={`hover:rotate-45 transition-all 5s ease-in-out`}
+      className={`group-hover:rotate-45 transition-all 5s ease-in-out`}
     >
       <path d="M7 7h10v10" />
       <path d="M7 17 17 7" />

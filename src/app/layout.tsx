@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { HeroSvg, Navbar } from "@/lib/exports";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: "Scrapely",
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Navbar />
         <HeroSvg />
         {children}
+        <Toaster />
       </body>
     </html>
   );
